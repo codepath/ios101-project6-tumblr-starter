@@ -4,7 +4,7 @@
 //
 
 import UIKit
-import Nuke
+import NukeExtensions
 
 class ViewController: UIViewController, UITableViewDataSource {
 
@@ -33,7 +33,7 @@ class ViewController: UIViewController, UITableViewDataSource {
 
         if let photo = post.photos.first {
             let url = photo.originalSize.url
-            Nuke.loadImage(with: url, into: cell.postImageView)
+            NukeExtensions.loadImage(with: url, into: cell.postImageView)
         }
 
         return cell
