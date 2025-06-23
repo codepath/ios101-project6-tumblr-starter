@@ -16,7 +16,10 @@
 		ED59161C29BC307E000F25AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED59161A29BC307E000F25AE /* LaunchScreen.storyboard */; };
 		ED59162429BC4921000F25AE /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59162329BC4921000F25AE /* Post.swift */; };
 		ED59162629BC4CC8000F25AE /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59162529BC4CC8000F25AE /* PostCell.swift */; };
-		ED59162929BC50E7000F25AE /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = ED59162829BC50E7000F25AE /* Nuke */; };
+		EDDD508A2DC42CB200B71C96 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = EDDD50892DC42CB200B71C96 /* Nuke */; };
+		EDDD508C2DC42CB200B71C96 /* NukeExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = EDDD508B2DC42CB200B71C96 /* NukeExtensions */; };
+		EDDD508E2DC42CB200B71C96 /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = EDDD508D2DC42CB200B71C96 /* NukeUI */; };
+		EDDD50902DC42CB200B71C96 /* NukeVideo in Frameworks */ = {isa = PBXBuildFile; productRef = EDDD508F2DC42CB200B71C96 /* NukeVideo */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +41,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED59162929BC50E7000F25AE /* Nuke in Frameworks */,
+				EDDD508E2DC42CB200B71C96 /* NukeUI in Frameworks */,
+				EDDD508A2DC42CB200B71C96 /* Nuke in Frameworks */,
+				EDDD508C2DC42CB200B71C96 /* NukeExtensions in Frameworks */,
+				EDDD50902DC42CB200B71C96 /* NukeVideo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +101,10 @@
 			);
 			name = "ios101-project6-tumblr";
 			packageProductDependencies = (
-				ED59162829BC50E7000F25AE /* Nuke */,
+				EDDD50892DC42CB200B71C96 /* Nuke */,
+				EDDD508B2DC42CB200B71C96 /* NukeExtensions */,
+				EDDD508D2DC42CB200B71C96 /* NukeUI */,
+				EDDD508F2DC42CB200B71C96 /* NukeVideo */,
 			);
 			productName = "ios101-project5-tumbler";
 			productReference = ED59160C29BC307D000F25AE /* ios101-project6-tumblr.app */;
@@ -126,7 +135,7 @@
 			);
 			mainGroup = ED59160329BC307D000F25AE;
 			packageReferences = (
-				ED59162729BC50E7000F25AE /* XCRemoteSwiftPackageReference "Nuke" */,
+				EDDD50882DC42CB200B71C96 /* XCRemoteSwiftPackageReference "Nuke" */,
 			);
 			productRefGroup = ED59160D29BC307D000F25AE /* Products */;
 			projectDirPath = "";
@@ -378,21 +387,36 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		ED59162729BC50E7000F25AE /* XCRemoteSwiftPackageReference "Nuke" */ = {
+		EDDD50882DC42CB200B71C96 /* XCRemoteSwiftPackageReference "Nuke" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kean/Nuke";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
+				minimumVersion = 12.8.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		ED59162829BC50E7000F25AE /* Nuke */ = {
+		EDDD50892DC42CB200B71C96 /* Nuke */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = ED59162729BC50E7000F25AE /* XCRemoteSwiftPackageReference "Nuke" */;
+			package = EDDD50882DC42CB200B71C96 /* XCRemoteSwiftPackageReference "Nuke" */;
 			productName = Nuke;
+		};
+		EDDD508B2DC42CB200B71C96 /* NukeExtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EDDD50882DC42CB200B71C96 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeExtensions;
+		};
+		EDDD508D2DC42CB200B71C96 /* NukeUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EDDD50882DC42CB200B71C96 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeUI;
+		};
+		EDDD508F2DC42CB200B71C96 /* NukeVideo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EDDD50882DC42CB200B71C96 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeVideo;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
